@@ -5,7 +5,6 @@ import collections
 link = 'https://stepik.org/media/attachments/lesson/24473/Crimes.csv'
 res = requests.get(link)
 reader = csv.DictReader(res.text.splitlines())
-reader
 cnt = collections.Counter()
 # for i in range(500):
 #     dct = next(reader)
