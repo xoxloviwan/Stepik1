@@ -12,15 +12,16 @@ def fnd_parent(parent, son):
             return res
     return False
 
+
 data = json.loads(input())
-print(data)
+#print(data)
 family = dict()
 for dct in data:
     if dct['parents']:
         family.update({dct['name']: dct['parents']})
     else:
         family.update({dct['name']: ['Godfather']})
-print(family)
+#print(family)
 parents_dict = dict()
 for par in family.keys():
     cnt = 0
